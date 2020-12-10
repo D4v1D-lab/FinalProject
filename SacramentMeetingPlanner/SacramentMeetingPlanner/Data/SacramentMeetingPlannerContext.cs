@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+
 
 namespace SacramentMeetingPlanner.Models
 {
@@ -13,6 +10,7 @@ namespace SacramentMeetingPlanner.Models
         {
         }
 
-        public DbSet<SacramentMeetingPlanner.Models.Message> Message { get; set; }
+        public DbSet<Message> Message { get; set; }
     }
 }
+
