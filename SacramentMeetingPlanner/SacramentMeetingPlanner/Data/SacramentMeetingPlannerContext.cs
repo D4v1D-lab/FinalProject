@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using SacramentMeetingPlanner.Models;
 
 
 namespace SacramentMeetingPlanner.Models
@@ -11,6 +12,8 @@ namespace SacramentMeetingPlanner.Models
         }
 
         public DbSet<Message> Message { get; set; }
+
+        public DbSet<SacramentMeetingPlanner.Models.Speakers> Speakers { get; set; }
     }
 }
 
